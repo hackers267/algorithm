@@ -15,4 +15,12 @@ public class Part1 {
         }
         return list;
     }
+
+    public double No1_7_a() {
+        double t = 9.0;
+        while (Math.abs(t - 9.0 / t) > 0.01) {
+            t = (9.0 / t + t) / 2.0;
+        }
+        return t;
+    }
 }
