@@ -1,6 +1,5 @@
 package practice;
 
-import edu.princeton.cs.algs4.StdOut;
 import org.junit.Test;
 
 import java.util.List;
@@ -29,9 +28,16 @@ public class Part1Test {
     }
 
     @Test
-    public void TestNo1_7_b(){
+    public void TestNo1_7_b() {
         Part1 part1 = new Part1();
         int i = part1.No1_7_b();
-        assertEquals(i,499500);
+        assertEquals(i, 499500);
+    }
+
+    @Test
+    public void TestNo1_7_c() {
+        Part1 part1 = new Part1();
+        int i = part1.No1_7_c();
+        assertEquals(i, 10000);
     }
 }
