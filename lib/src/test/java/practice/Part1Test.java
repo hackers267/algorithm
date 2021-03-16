@@ -27,4 +27,11 @@ public class Part1Test {
         assertTrue(t > 3.0);
         assertTrue(t < 3.1);
     }
+
+    @Test
+    public void TestNo1_7_b(){
+        Part1 part1 = new Part1();
+        int i = part1.No1_7_b();
+        assertEquals(i,499500);
+    }
 }

@@ -23,4 +23,14 @@ public class Part1 {
         }
         return t;
     }
+
+    public int No1_7_b() {
+        int sum = 0;
+        for (int i = 1; i < 1000; i++) {
+            for (int j = 0; j < i; j++) {
+                sum++;
+            }
+        }
+        return sum;
+    }
 }
