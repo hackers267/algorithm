@@ -82,6 +82,14 @@ public class Part1Test {
             assertEquals(expected[i], actual[i]);
         }
         int sum = Arrays.stream(actual).sum();
-        assertEquals(sum,a.length);
+        assertEquals(sum, a.length);
+    }
+
+    @Test
+    public void TestExR1() {
+        int n = 6;
+        String expected = "311361142246";
+        String actual = Part1.exR1(n);
+        assertEquals(expected, actual);
     }
 }
