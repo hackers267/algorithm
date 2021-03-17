@@ -62,12 +62,11 @@ public class Part1Test {
 
     @Test
     public void TestNo1_14() {
-        Part1 part1 = new Part1();
         int N = 8;
-        int result = part1.No1_14(N);
+        int result = Part1.No1_14(N);
         assertEquals(3, result);
         int N1 = 9;
-        int result1 = part1.No1_14(N1);
+        int result1 = Part1.No1_14(N1);
         assertEquals(3,result1);
     }
 }
