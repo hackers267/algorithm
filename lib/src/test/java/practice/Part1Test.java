@@ -40,4 +40,13 @@ public class Part1Test {
         int i = part1.No1_7_c();
         assertEquals(i, 10000);
     }
+
+    @Test
+    public void TestNo1_9() {
+        Part1 part1 = new Part1();
+        int i = 7;
+        String s = part1.No1_9(i);
+        String result = Integer.toBinaryString(i);
+        assertEquals(s,result);
+    }
 }

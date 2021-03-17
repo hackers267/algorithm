@@ -43,4 +43,12 @@ public class Part1 {
         }
         return sum;
     }
+
+    public String No1_9(int N) {
+        StringBuilder s = new StringBuilder();
+        for (int n = N; n > 0; n /= 2) {
+            s.insert(0, (n % 2));
+        }
+        return s.toString();
+    }
 }
