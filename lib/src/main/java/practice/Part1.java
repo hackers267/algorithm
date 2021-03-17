@@ -63,7 +63,7 @@ public class Part1 {
         return a;
     }
 
-    public static int No1_14(int N) {
+    public static int lg(int N) {
         int i = 0;
         while ((2 << i) <= N) {
             i++;

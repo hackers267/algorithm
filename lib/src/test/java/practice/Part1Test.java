@@ -63,10 +63,10 @@ public class Part1Test {
     @Test
     public void TestNo1_14() {
         int N = 8;
-        int result = Part1.No1_14(N);
+        int result = Part1.lg(N);
         assertEquals(3, result);
         int N1 = 9;
-        int result1 = Part1.No1_14(N1);
+        int result1 = Part1.lg(N1);
         assertEquals(3,result1);
     }
 }
