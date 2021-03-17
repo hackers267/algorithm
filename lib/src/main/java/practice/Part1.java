@@ -51,4 +51,15 @@ public class Part1 {
         }
         return s.toString();
     }
+
+    public int[] No1_12() {
+        int[] a = new int[10];
+        for (int i = 0; i < 10; i++) {
+            a[i] = 9 - i;
+        }
+        for (int i = 0; i < 10; i++) {
+            a[i] = a[a[i]];
+        }
+        return a;
+    }
 }

@@ -47,6 +47,16 @@ public class Part1Test {
         int i = 7;
         String s = part1.No1_9(i);
         String result = Integer.toBinaryString(i);
-        assertEquals(s,result);
+        assertEquals(s, result);
+    }
+
+    @Test
+    public void TestNo1_12() {
+        Part1 part1 = new Part1();
+        int[] a = part1.No1_12();
+        int[] result = {0, 1, 2, 3, 4, 4, 3, 2, 1, 0};
+        for (int i = 0; i < result.length; i++) {
+            assertEquals(result[i], a[i]);
+        }
     }
 }
