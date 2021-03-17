@@ -62,4 +62,12 @@ public class Part1 {
         }
         return a;
     }
+
+    public int No1_14(int N) {
+        int i = 0;
+        while ((2 << i) <= N) {
+            i++;
+        }
+        return i;
+    }
 }
