@@ -2,6 +2,7 @@ package practice;
 
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -67,6 +68,20 @@ public class Part1Test {
         assertEquals(3, result);
         int N1 = 9;
         int result1 = Part1.lg(N1);
-        assertEquals(3,result1);
+        assertEquals(3, result1);
+    }
+
+    @Test
+    public void TestHistogram() {
+        int M = 3;
+        int[] a = {1, 1, 1, 2};
+        int[] expected = {0, 3, 1};
+        int[] actual = Part1.histogram(M, a);
+        assertEquals(actual.length, expected.length);
+        for (int i = 0; i < expected.length; i++) {
+            assertEquals(expected[i], actual[i]);
+        }
+        int sum = Arrays.stream(actual).sum();
+        assertEquals(sum,a.length);
     }
 }

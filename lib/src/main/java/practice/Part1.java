@@ -1,6 +1,7 @@
 package practice;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Part1 {
@@ -69,5 +70,19 @@ public class Part1 {
             i++;
         }
         return i;
+    }
+
+    public static int[] histogram(int M, int[] a) {
+        int[] array = new int[M];
+        for (int i = 0; i < array.length; i++) {
+            int sum = 0;
+            for (int k : a) {
+                if (i == k) {
+                    sum++;
+                }
+            }
+            array[i] = sum;
+        }
+        return array;
     }
 }
