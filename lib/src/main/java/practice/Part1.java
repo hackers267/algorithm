@@ -1,7 +1,6 @@
 package practice;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Part1 {
@@ -89,5 +88,17 @@ public class Part1 {
     public static String exR1(int n) {
         if (n <= 0) return "";
         return exR1(n - 3) + n + exR1(n - 2) + n;
+    }
+
+    public static int mysteryAdd(int a, int b) {
+        if (b == 0) return 0;
+        if (b % 2 == 0) return mysteryAdd(a * 2, b / 2);
+        return mysteryAdd(a * 2, b / 2) + a;
+    }
+
+    public static int mysteryMulti(int a, int b) {
+        if (b == 0) return 1;
+        if (b % 2 == 0) return mysteryMulti(a * a, b / 2);
+        return mysteryMulti(a * a, b / 2) * a;
     }
 }

@@ -92,4 +92,24 @@ public class Part1Test {
         String actual = Part1.exR1(n);
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void TestMysteryAdd(){
+        int result = Part1.mysteryAdd(2,25);
+        int expected = 50;
+        assertEquals(result,expected);
+        int r = Part1.mysteryAdd(3,11);
+        int e = 33;
+        assertEquals(r,e);
+    }
+
+    @Test
+    public void TestMysteryMulti(){
+        int result = Part1.mysteryMulti(2,25);
+        int expected = 33554432;
+        assertEquals(result,expected);
+        int r = Part1.mysteryMulti(3,11);
+        int e = 177147;
+        assertEquals(r,e);
+    }
 }
