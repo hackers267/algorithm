@@ -1,7 +1,9 @@
 package practice;
 
+import edu.princeton.cs.algs4.In;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -95,12 +97,20 @@ public class Part1Test {
 
     @Test
     public void TestMysteryAdd(){
-        int result = Part1.mysteryAdd(2,25);
-        int expected = 50;
+        ArrayList<Integer> list = Part1.mysteryAdd(2,25);
+        Integer result = list.get(0);
+        Integer expected = 50;
         assertEquals(result,expected);
-        int r = Part1.mysteryAdd(3,11);
-        int e = 33;
+        Integer time = list.get(1);
+        Integer expected_time = 13;
+        assertEquals(time,expected_time);
+        ArrayList<Integer> l = Part1.mysteryAdd(3,11);
+        Integer r = l.get(0);
+        Integer e = 33;
         assertEquals(r,e);
+        Integer t = l.get(1);
+        Integer e_t = 6;
+        assertEquals(e,e_t);
     }
 
     @Test
