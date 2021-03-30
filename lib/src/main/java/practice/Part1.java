@@ -90,21 +90,10 @@ public class Part1 {
         return exR1(n - 3) + n + exR1(n - 2) + n;
     }
 
-    public static ArrayList<Integer> mysteryAdd(int a, int b){
-        return mysteryAdd(a,b,1);
-    }
-
-    public static ArrayList<Integer> mysteryAdd(int a, int b, int time) {
-        if (b == 0) {
-            ArrayList<Integer> list = new ArrayList<>();
-            list.add(0);
-            list.add(time);
-            return list;
-        }
-        if (b % 2 == 0) {
-            return mysteryAdd(a * 2, b / 2,time+1);
-        }
-        return mysteryAdd(a,b,time+1);
+    public static int mysteryAdd(int a, int b) {
+        if (b == 0) return 0;
+        if (b % 2 == 0) return mysteryAdd(a * 2, b / 2);
+        return mysteryAdd(a * 2, b / 2) + a;
     }
 
     public static int mysteryMulti(int a, int b) {
