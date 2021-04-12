@@ -40,4 +40,9 @@ public class BinarySearch {
         }
         return 0;
     }
+
+    public static int count(int key, int[] a) {
+        int less = ranks(key, a);
+        return ranks(key + 1, a) - less;
+    }
 }
